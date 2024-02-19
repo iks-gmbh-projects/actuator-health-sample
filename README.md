@@ -4,9 +4,6 @@
 Beispiel Spring Boot Anwendung zur Demonstration Spring Actuator Health Endpoint und Verarbeitungsstatistik Plugin.
 Die Werte können zum Monitoring der Anwendung verwendet werden.
 
-## Home
-https://github.com/hjaegleiks/actuator-health-sample
-
 ## How to Install and Run the Project
 
 ### Prerequisites
@@ -14,11 +11,11 @@ https://github.com/hjaegleiks/actuator-health-sample
 * [Apache Maven](https://maven.apache.org/) 3+
 * [Spring Boot](https://spring.io/projects/spring-boot) 2.7+
 * Java Modul actuator-health-processstatistic.jar,
-  GitHub Repository https://github.com/hjaegleiks/actuator-health-processstatistic
+  GitHub Repository https://github.com/iks-gmbh-projects/actuator-health-processstatistic
 
 ### Install
 Projekt aus GitHub Repository in ein neues Projekt-Verzeichnis klonen:  
-https://github.com/hjaegleiks/actuator-health-sample.git
+https://github.com/iks-gmbh-projects/actuator-health-sample.git
 
 Dort Java Archiv Datei (JAR) erstellen mit Build Tool Maven und `pom.xml`:
 ```shell
