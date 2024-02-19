@@ -33,8 +33,6 @@ java -jar target\actuator-health-sample-app.jar
 ```
 
 ### Aufruf Beispielanwendung
-http://localhost:8080/actuatorhealthsample/greeting?name=Mustermann
-
 Wenn Spring Boot Anwendung gestartet ist (siehe Konsolenausgabe "Started ActuatorHealthSampleApp in xxx seconds"),
 dann im Internetbrowser URL aufrufen (HTTP GET):  
 http://localhost:8080/actuatorhealthsample/greeting?name=Mustermann
@@ -48,9 +46,6 @@ Um mal Fehlereinträge zu provozieren, Parameter `name` leer lassen.
 
 ### Aufruf Health Endpoint
 http://localhost:8080/actuatorhealthsample/actuator/health
-
-### Aufruf Health Endpoint Verarbeitungsstatistik abrufen
-http://localhost:8080/actuatorhealthsample/actuator/healthProcessStatistic/get/errorCounter
 
 ### Aufruf Health Endpoint Verarbeitungsstatistik zurücksetzen
 http://localhost:8080/actuatorhealthsample/actuator/healthProcessStatistic/reset?reset=true
