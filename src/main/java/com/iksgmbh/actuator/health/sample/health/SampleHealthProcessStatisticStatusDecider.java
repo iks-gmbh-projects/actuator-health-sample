@@ -44,7 +44,9 @@ public class SampleHealthProcessStatisticStatusDecider extends HealthProcessStat
     }
 
     /**
-     * Implementation to determine current application health status like UP, DOWN, ERROR, WARNING, etc.
+     * Implementation to determine current application health status like
+     * UP, DOWN, OUT_OF_SERVICE, UNKNOWN, ERROR, WARNING, etc.
+     * @see org.springframework.boot.actuate.health.Health
      *
      * @return Health status object
      */
@@ -65,7 +67,7 @@ public class SampleHealthProcessStatisticStatusDecider extends HealthProcessStat
 
         // WARNING - Errors occurred in the past
         if (isCounterGreaterZero(SampleHealthProcessStatisticDataKey.error)) {
-            return Health.status("WARNING")
+            return Health.status(HEALTH_STATUS_CODE_WARNING)
                     .withDetails(healthProcessStatisticData.getHealthProcessStatisticDataMap())
                     .build();
         }
